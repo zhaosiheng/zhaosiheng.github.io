@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="基础篇（高数）第一章：函数、极限、连续①.f(x)= e^{lnf(x)} 非最优先，先考虑③ ②.洛必达法则 ③.f(x)^y=[1+(f(x)-1)]^{\frac{1}{f(x)-1}*(f(x)-1)*y}\rightarrow e^{y*(f(x)-1)} 需保证f(x)\Rightarrow 1,此公式为两个重要极限之一，不能局部使用，会破坏极限的同时性 ④.\sqrt{f(x)}-\">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-10T12:56:39.318Z">
+<meta property="og:updated_time" content="2019-07-11T12:33:20.315Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数学1800题总结">
 <meta name="twitter:description" content="基础篇（高数）第一章：函数、极限、连续①.f(x)= e^{lnf(x)} 非最优先，先考虑③ ②.洛必达法则 ③.f(x)^y=[1+(f(x)-1)]^{\frac{1}{f(x)-1}*(f(x)-1)*y}\rightarrow e^{y*(f(x)-1)} 需保证f(x)\Rightarrow 1,此公式为两个重要极限之一，不能局部使用，会破坏极限的同时性 ④.\sqrt{f(x)}-\">
@@ -99,15 +99,38 @@
 <p>⑫.额外增加无穷项，补齐复杂项，形成可以进行等价替换的形式，或拆分成两项分别化简。</p>
 <p>上述12种方法与几种等价无穷小结合使用，可完成求极限题型</p>
 <h2 id="第二章：导数与微分"><a href="#第二章：导数与微分" class="headerlink" title="第二章：导数与微分"></a>第二章：导数与微分</h2><ul>
-<li>导数的定义式：<script type="math/tex">f'(x_0)=\lim_{\Delta x\to 0}{\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}}</script>,可变为<script type="math/tex">\lim_{u\to 0}{\frac{f(x_0+u)-f(x_0)}{u}}</script>;  <script type="math/tex; mode=display">f'(x_0)=\lim_{x\to x_0}{\frac{f(x)-f(x_0)}{x-x_0}}$$,当$$x_0=0$$时,$$f'(0)=\lim_{x\to 0}{\frac{f(x)-f(0)}{x}}</script></li>
+<li>导数的定义式：<script type="math/tex; mode=display">f'(x_0)=\lim_{\Delta x\to 0}{\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}} ,可变为\lim_{u\to 0}{\frac{f(x_0+u)-f(x_0)}{u}}</script><script type="math/tex; mode=display">f'(x_0)=\lim_{x\to x_0}{\frac{f(x)-f(x_0)}{x-x_0}},当x_0=0时,f'(0)=\lim_{x\to 0}{\frac{f(x)-f(0)}{x}}</script></li>
 <li><script type="math/tex">\Delta y-dy=\frac{1}{2}f''(\xi)(\Delta x)^2</script>,其中<script type="math/tex">dx,\Delta</script>代表横坐标-x的变化（增减）值,<script type="math/tex">\Delta y</script>代表纵坐标-y函数的变化（增减）值,<script type="math/tex">dy</script>代表所取点处的切线函数-<script type="math/tex">y'(x)</script>的变化（增减）值</li>
 <li>连续函数取绝对值后函数仍保持连续性，可导函数取绝对值后不一定保持可导性。例：<script type="math/tex">y=|x|</script></li>
+<li>二重积分求导，例：计算<script type="math/tex">\lim \limits_{t \to 0}\frac{1}{t^2}\int_{0}^{t}dx\int_{x}^{t}e^{-(x-y)^2}dy</script><br>首先交换二重积分的次序：<script type="math/tex">I=\lim \limits_{t \to 0}\frac{1}{t^2}\int_{0}^{t}dx\int_{x}^{t}e^{-(x-y)^2}dy=\lim \limits_{t \to 0}\frac{1}{t^2}\int_{0}^{t}dy\int_{0}^{t}e^{-(x-y)^2}dx</script><br>令<script type="math/tex">\int_{0}^{y}e^{-(x-y)^2}dx=f(y),则\int_{0}^{t}dy\int_{0}^{t}e^{-(x-y)^2}dx=\int_{0}^{t}f(y)dy</script><br>原式<script type="math/tex">I=\lim \limits_{t\to 0}\frac{\int_{0}^{t}f(y)dy}{t^2}\overset{\text{洛必达}}{=} \lim \limits_{t\to 0}\frac{f(t)}{2t}= \lim \limits_{t\to 0}\frac{\int_{0}^{t}e^{-(x-t)^2}  dx}{2t}</script></li>
+<li>求分段函数的导数时，连续段部分用导数公式求，断点处用定义式求</li>
 </ul>
-<h2 id="第三章：中值定理与一元函数微分学的应用"><a href="#第三章：中值定理与一元函数微分学的应用" class="headerlink" title="第三章：中值定理与一元函数微分学的应用"></a>第三章：中值定理与一元函数微分学的应用</h2><h2 id="第四章：不定积分"><a href="#第四章：不定积分" class="headerlink" title="第四章：不定积分"></a>第四章：不定积分</h2><h2 id="第五章：定积分"><a href="#第五章：定积分" class="headerlink" title="第五章：定积分"></a>第五章：定积分</h2><h2 id="第六章：多元函数微分学"><a href="#第六章：多元函数微分学" class="headerlink" title="第六章：多元函数微分学"></a>第六章：多元函数微分学</h2><h2 id="第七章：重积分"><a href="#第七章：重积分" class="headerlink" title="第七章：重积分"></a>第七章：重积分</h2><h2 id="第八章：微分方程"><a href="#第八章：微分方程" class="headerlink" title="第八章：微分方程"></a>第八章：微分方程</h2>
+<h2 id="第三章：中值定理与一元函数微分学的应用"><a href="#第三章：中值定理与一元函数微分学的应用" class="headerlink" title="第三章：中值定理与一元函数微分学的应用"></a>第三章：中值定理与一元函数微分学的应用</h2><ol>
+<li>三大微分中值定理：拉格朗日（Lagrange）中值是核心定理，罗尔（Rolle）中值是它的特例，柯西（Cauchy）中值是它的推广。<ul>
+<li>拉格朗日中值：<script type="math/tex">f(x)满足[a,b]上连续,(a,b)上可导，则至少有一点\xi (a<\xi<b)，使\frac{f(b)-f(a)}{b-a}=f'(\xi)</script></li>
+<li>罗尔中值：<script type="math/tex">f(x)满足[a,b]上连续,(a,b)上可导,f(a)=f(b),则至少有一点\xi(a<\xi<b),使f'(\xi)=0</script>  </li>
+<li>柯西中值：<script type="math/tex">f(x),g(x)满足[a,b]上连续,(a,b)上可导,且g'(x)\neq 0,则至少有一点\xi(a<\xi<b),使\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f'(\xi)}{g'(\xi)}</script>  </li>
+</ul>
+</li>
+<li>凹凸函数：<script type="math/tex">当x_1<x_2时,有不等式f(q_1 x_1+q_2 x_2)\geq(或\leq) q_1 f(x_1)+q_2 f(x_2),其中q_1、q_2为正数,q_1+q_2=1,这时，称f(x)为凹（凸）函数</script></li>
+<li>介值定理：若<script type="math/tex">imn(f(a),f(b))<u<max(f(a),f(b)),那么,存在c\in(a,b),使得f(c)=u</script></li>
+<li>常见构造函数与技巧：<ul>
+<li>设<script type="math/tex">g(x)=e^{\pm x} [f(x)+a]\Rightarrow g'(x)=e^{\pm x}\{f'(x)\pm [f(x)+a]\},e^{\pm x}项常常会被约掉</script></li>
+<li>设<script type="math/tex">\varphi(x)= f(x)g(b)+f(a)g(x)-f(x)g(x),当\varphi'(x)=0时，\frac{f(a)-f(\xi)}{g(\xi)-g(b)}=\frac{f'(\xi)}{g'(\xi)}</script></li>
+<li>设<script type="math/tex">\varphi(x)=(b-x)^af(x)\Rightarrow \varphi'(x)=a(b-x)^{a-1}f(x)+(b-x)^af'(x)=(b-x)^{a-1}[af(x)+f'(x)],(b-x)^{a-1}项常常会被约掉</script></li>
+<li>设<script type="math/tex">g(x)=\frac{f(x)}{x}\Rightarrow g'(x)=\frac{x-xf'(x)}{x^2},\frac{1}{x^2}项常常会被约掉</script></li>
+<li>×1可以变换为（2-1），ln2可以变换为ln2-ln1</li>
+</ul>
+</li>
+</ol>
+<h2 id="第四章：不定积分"><a href="#第四章：不定积分" class="headerlink" title="第四章：不定积分"></a>第四章：不定积分</h2><ol>
+<li>分式拆分(必须是分母的因式次数比分子的因式次数大的真分数)<a href="https://wenku.baidu.com/view/608c2aed4a7302768f99395e.html" target="_blank" rel="noopener">https://wenku.baidu.com/view/608c2aed4a7302768f99395e.html</a></li>
+</ol>
+<h2 id="第五章：定积分"><a href="#第五章：定积分" class="headerlink" title="第五章：定积分"></a>第五章：定积分</h2><h2 id="第六章：多元函数微分学"><a href="#第六章：多元函数微分学" class="headerlink" title="第六章：多元函数微分学"></a>第六章：多元函数微分学</h2><h2 id="第七章：重积分"><a href="#第七章：重积分" class="headerlink" title="第七章：重积分"></a>第七章：重积分</h2><h2 id="第八章：微分方程"><a href="#第八章：微分方程" class="headerlink" title="第八章：微分方程"></a>第八章：微分方程</h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/08/数学1800题总结/" data-id="cjxx8zcuz000190b1txzpry31" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/08/数学1800题总结/" data-id="cjxynlhuo0001gob1lyoko748" class="article-share-link">Share</a>
       
       
     </footer>
