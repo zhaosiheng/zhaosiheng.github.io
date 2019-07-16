@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="基础篇（高数）第一章：函数、极限、连续①.f(x)= e^{lnf(x)} 非最优先，先考虑③ ②.洛必达法则 ③.f(x)^y=[1+(f(x)-1)]^{\frac{1}{f(x)-1}*(f(x)-1)*y}\rightarrow e^{y*(f(x)-1)} 需保证f(x)\Rightarrow 1,此公式为两个重要极限之一，不能局部使用，会破坏极限的同时性 ④.\sqrt{f(x)}-\">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-16T10:58:33.517Z">
+<meta property="og:updated_time" content="2019-07-16T12:34:08.708Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数学1800题总结">
 <meta name="twitter:description" content="基础篇（高数）第一章：函数、极限、连续①.f(x)= e^{lnf(x)} 非最优先，先考虑③ ②.洛必达法则 ③.f(x)^y=[1+(f(x)-1)]^{\frac{1}{f(x)-1}*(f(x)-1)*y}\rightarrow e^{y*(f(x)-1)} 需保证f(x)\Rightarrow 1,此公式为两个重要极限之一，不能局部使用，会破坏极限的同时性 ④.\sqrt{f(x)}-\">
@@ -131,7 +131,9 @@
 <li>取<script type="math/tex">(1-\frac{1}{x^2})可积分为x+\frac{1}{x}</script></li>
 <li>三角函数尽量<script type="math/tex">拆分成\int\frac{sinx}{cosx}dx,\int\frac{cosx}{sinx}dx,\int\frac{1}{cosx}dx,\int\frac{1}{sinx}dx,\int\frac{1}{cos^2x}dx,\int\frac{1}{sin^2x}dx,\int\frac{sinx}{cos^2x}dx,\int\frac{cosx}{sin^2x}dx,\int\frac{sin^2x}{cos^2x}dx</script></li>
 <li>当<script type="math/tex">e^{-x}、或分母出现e^x时,考虑自己同时乘除e^x</script></li>
-<li>若<script type="math/tex">\int R(sin^2x,cos^2x)dx型,</script><br>3.快捷公式：</li>
+<li>形如<script type="math/tex">\int \frac{1}{A+Bsin^2x}dx,先将分母变为Acos^2x+(A+B)sin^2x形式，再分子分母同除cos^2x,形成\int\frac{1}{A+(A+B)tan^2x}d(tanx)</script></li>
+<li>形如<script type="math/tex">\int\frac{1}{A+Bsinx}dx,先将分母拆为Asin^2\frac{x}{2}+Acos^2\frac{x}{2}+2Bsin\frac{x}{2}cos\frac{x}{2},再分子分母同除cos^2\frac{x}{2},形成\int\frac{1}{Atan^2\frac{x}{2}+A+2Btan\frac{x}{2}}d(tan\frac{x}{2})</script></li>
+<li>形如<script type="math/tex">\int\frac{sinx}{A+Bsinx}dx,先分子分母同乘A-Bsinx,得\frac{Asinx-Bsin^2x}{A^2-B^2sin^2x},再转化为\frac{Asinx}{(A-B)^2+Bcos^2x}-\frac{Bsin^2x}{A^2-B^2sin^2x},前一项通过d(-cosx)求</script>,<script type="math/tex">后一项变为\frac{1}{B}(1-\frac{A^2}{A^2-B^2sin^2x})再求</script><br>3.快捷公式：</li>
 <li><script type="math/tex; mode=display">\int e^{ax}cosbxdx=\frac{e^{ax}}{a^2+b^2}(acosbx+bsinbx)+C,\int e^{ax}sinbxdx=\frac{e^{ax}}{a^2+b^2}(-bcosbx+asinbx)+C</script>4.换元法：</li>
 <li>若<script type="math/tex">\int R(x,\sqrt{a^2-x^2})dx,\int R(x,\sqrt{x^2\pm a^2})dx型,a>0</script><br>含<script type="math/tex">\sqrt{a^2-x^2},命x=asint,dx=acostdt</script><br>含<script type="math/tex">\sqrt{x^2+a^2},命x=atant,dx=\frac{a}{cos^2t}dt</script><br>含<script type="math/tex">\sqrt{x^2-a^2},命x=\frac{a}{cost},dx=\frac{asint}{cos^2t}</script></li>
 <li>若<script type="math/tex">\int R(x,\sqrt[n]{ax+b},\sqrt[m]{ax+b})dx型,a\neq 0,命\sqrt[mn]{ax+b}=t,x=\frac{t^{mn}-b}{a},dx=\frac{mn}{a}t^{mn-1}dt</script></li>
@@ -145,7 +147,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/08/数学1800题总结/" data-id="cjy5pf39r00004ob1wucithwq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/08/数学1800题总结/" data-id="cjy5str5x0001m8b1855sb59c" class="article-share-link">Share</a>
       
       
     </footer>
