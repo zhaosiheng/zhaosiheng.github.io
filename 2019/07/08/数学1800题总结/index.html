@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="基础篇（高数）第一章：函数、极限、连续①.f(x)= e^{lnf(x)} 非最优先，先考虑③ ②.洛必达法则 ③.f(x)^y=[1+(f(x)-1)]^{\frac{1}{f(x)-1}*(f(x)-1)*y}\rightarrow e^{y*(f(x)-1)} 需保证f(x)\Rightarrow 1,此公式为两个重要极限之一，不能局部使用，会破坏极限的同时性 ④.\sqrt{f(x)}-\">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-11T12:33:20.315Z">
+<meta property="og:updated_time" content="2019-07-16T10:58:33.517Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数学1800题总结">
 <meta name="twitter:description" content="基础篇（高数）第一章：函数、极限、连续①.f(x)= e^{lnf(x)} 非最优先，先考虑③ ②.洛必达法则 ③.f(x)^y=[1+(f(x)-1)]^{\frac{1}{f(x)-1}*(f(x)-1)*y}\rightarrow e^{y*(f(x)-1)} 需保证f(x)\Rightarrow 1,此公式为两个重要极限之一，不能局部使用，会破坏极限的同时性 ④.\sqrt{f(x)}-\">
@@ -125,12 +125,27 @@
 </ol>
 <h2 id="第四章：不定积分"><a href="#第四章：不定积分" class="headerlink" title="第四章：不定积分"></a>第四章：不定积分</h2><ol>
 <li>分式拆分(必须是分母的因式次数比分子的因式次数大的真分数)<a href="https://wenku.baidu.com/view/608c2aed4a7302768f99395e.html" target="_blank" rel="noopener">https://wenku.baidu.com/view/608c2aed4a7302768f99395e.html</a></li>
+<li>积分技巧：<ul>
+<li>取<script type="math/tex">\frac{1}{\sqrt{x}}可积分为\frac{\sqrt {x}}{2},x可变为(\sqrt x)^2与其配合</script></li>
+<li>取<script type="math/tex">cosx可积分为sinx,与纯sinx构成的函数配合计算</script></li>
+<li>取<script type="math/tex">(1-\frac{1}{x^2})可积分为x+\frac{1}{x}</script></li>
+<li>三角函数尽量<script type="math/tex">拆分成\int\frac{sinx}{cosx}dx,\int\frac{cosx}{sinx}dx,\int\frac{1}{cosx}dx,\int\frac{1}{sinx}dx,\int\frac{1}{cos^2x}dx,\int\frac{1}{sin^2x}dx,\int\frac{sinx}{cos^2x}dx,\int\frac{cosx}{sin^2x}dx,\int\frac{sin^2x}{cos^2x}dx</script></li>
+<li>当<script type="math/tex">e^{-x}、或分母出现e^x时,考虑自己同时乘除e^x</script></li>
+<li>若<script type="math/tex">\int R(sin^2x,cos^2x)dx型,</script><br>3.快捷公式：</li>
+<li><script type="math/tex; mode=display">\int e^{ax}cosbxdx=\frac{e^{ax}}{a^2+b^2}(acosbx+bsinbx)+C,\int e^{ax}sinbxdx=\frac{e^{ax}}{a^2+b^2}(-bcosbx+asinbx)+C</script>4.换元法：</li>
+<li>若<script type="math/tex">\int R(x,\sqrt{a^2-x^2})dx,\int R(x,\sqrt{x^2\pm a^2})dx型,a>0</script><br>含<script type="math/tex">\sqrt{a^2-x^2},命x=asint,dx=acostdt</script><br>含<script type="math/tex">\sqrt{x^2+a^2},命x=atant,dx=\frac{a}{cos^2t}dt</script><br>含<script type="math/tex">\sqrt{x^2-a^2},命x=\frac{a}{cost},dx=\frac{asint}{cos^2t}</script></li>
+<li>若<script type="math/tex">\int R(x,\sqrt[n]{ax+b},\sqrt[m]{ax+b})dx型,a\neq 0,命\sqrt[mn]{ax+b}=t,x=\frac{t^{mn}-b}{a},dx=\frac{mn}{a}t^{mn-1}dt</script></li>
+<li>若<script type="math/tex">\int R(x,\sqrt{\frac{ax+b}{cx+d}})dx型,命\sqrt{\frac{ax+b}{cx+d}}=t,x=\frac{dt^2-b}{a-ct^2},dx=\frac{2(ad-bx)t}{(a-ct^2)^2}</script></li>
+<li>万能代换，若<script type="math/tex">\int R(sinx,cosx)dx型,tan\frac{x}{2}=t,则sinx=\frac{2t}{1+t^2},cosx=\frac{1-t^2}{1+t^2},dx=\frac{2}{1+t^2}dt</script></li>
+<li>形如<script type="math/tex">\sqrt{e^x-1}可以换元,x=ln(t^2+1),dx=\frac{2t}{t^2+1}</script><h2 id="第五章：定积分"><a href="#第五章：定积分" class="headerlink" title="第五章：定积分"></a>第五章：定积分</h2></li>
+</ul>
+</li>
 </ol>
-<h2 id="第五章：定积分"><a href="#第五章：定积分" class="headerlink" title="第五章：定积分"></a>第五章：定积分</h2><h2 id="第六章：多元函数微分学"><a href="#第六章：多元函数微分学" class="headerlink" title="第六章：多元函数微分学"></a>第六章：多元函数微分学</h2><h2 id="第七章：重积分"><a href="#第七章：重积分" class="headerlink" title="第七章：重积分"></a>第七章：重积分</h2><h2 id="第八章：微分方程"><a href="#第八章：微分方程" class="headerlink" title="第八章：微分方程"></a>第八章：微分方程</h2>
+<h2 id="第六章：多元函数微分学"><a href="#第六章：多元函数微分学" class="headerlink" title="第六章：多元函数微分学"></a>第六章：多元函数微分学</h2><h2 id="第七章：重积分"><a href="#第七章：重积分" class="headerlink" title="第七章：重积分"></a>第七章：重积分</h2><h2 id="第八章：微分方程"><a href="#第八章：微分方程" class="headerlink" title="第八章：微分方程"></a>第八章：微分方程</h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/08/数学1800题总结/" data-id="cjxynlhuo0001gob1lyoko748" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/08/数学1800题总结/" data-id="cjy5pf39r00004ob1wucithwq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -239,6 +254,6 @@
             all[i].SourceElement().parentNode.className += ' has-jax';
     });
 </script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
