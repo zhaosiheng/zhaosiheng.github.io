@@ -14,10 +14,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="基础篇（高数）第一章：函数、极限、连续①.f(x)= e^{lnf(x)} 非最优先，先考虑③ ②.洛必达法则 ③.f(x)^y=[1+(f(x)-1)]^{\frac{1}{f(x)-1}*(f(x)-1)*y}\rightarrow e^{y*(f(x)-1)} 需保证f(x)\Rightarrow 1,此公式为两个重要极限之一，不能局部使用，会破坏极限的同时性 ④.\sqrt{f(x)}-\">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-18T12:29:12.893Z">
+<meta property="og:image" content="https://thumbnail0.baidupcs.com/thumbnail/bc291e1d312d7982aff97141f6ec6bde?fid=1312760627-250528-654549961021874&time=1564394400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8n1vzfQR%2BHqhulJV14P%2Bi20BenM%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4864853510313617129&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video">
+<meta property="og:image" content="https://thumbnail0.baidupcs.com/thumbnail/bc291e1d312d7982aff97141f6ec6bde?fid=1312760627-250528-528383333949960&time=1564394400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-nH10m8Ro2W%2BG%2FNAYXd1O1qa6TLE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4864868407641188482&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video">
+<meta property="og:image" content="https://thumbnail0.baidupcs.com/thumbnail/1f1ee410a38dc51e238c2892706e8c8c?fid=1312760627-250528-612883444174636&time=1564394400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-XBwJ%2FHP23uB2mXPCx11e8hsSZuc%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4864770851703797938&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video">
+<meta property="og:updated_time" content="2019-07-29T11:15:58.278Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数学1800题总结">
 <meta name="twitter:description" content="基础篇（高数）第一章：函数、极限、连续①.f(x)= e^{lnf(x)} 非最优先，先考虑③ ②.洛必达法则 ③.f(x)^y=[1+(f(x)-1)]^{\frac{1}{f(x)-1}*(f(x)-1)*y}\rightarrow e^{y*(f(x)-1)} 需保证f(x)\Rightarrow 1,此公式为两个重要极限之一，不能局部使用，会破坏极限的同时性 ④.\sqrt{f(x)}-\">
+<meta name="twitter:image" content="https://thumbnail0.baidupcs.com/thumbnail/bc291e1d312d7982aff97141f6ec6bde?fid=1312760627-250528-654549961021874&time=1564394400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8n1vzfQR%2BHqhulJV14P%2Bi20BenM%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4864853510313617129&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -146,14 +150,15 @@
 <ul>
 <li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^{\frac{\pi}{2}}f(sinx)dx=\int_0^{\frac{\pi}{2}}f(cosx)dx</script></li>
 <li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^\pi f(sinx)dx=2\int_0^{\frac{\pi}{2}}f(sinx)dx</script>,<script type="math/tex">\int_0^\pi f(|cosx|)dx=2\int_0^{\frac{\pi}{2}}f(cosx)dx</script></li>
-<li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^\pi xf(sinx)dx=\frac{\pi}{2}\int_0^\pi f(sinx)dx=</script></li>
-<li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^{2\pi} f(|sinx|)dx=\int_0^{2\pi} f(|cosx|)dx=4\int_0^\{\frac{\pi}{2}} f(sinx)dx=4\int_0^{\frac{\pi}{2}} f(cosx)dx</script><h2 id="第六章：多元函数微分学"><a href="#第六章：多元函数微分学" class="headerlink" title="第六章：多元函数微分学"></a>第六章：多元函数微分学</h2></li>
+<li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^\pi xf(sinx)dx=\frac{\pi}{2}\int_0^\pi f(sinx)dx</script></li>
+<li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^{2\pi} f(|sinx|)dx=\int_0^{2\pi} f(|cosx|)dx=4\int_0^\{\frac{\pi}{2}} f(sinx)dx=4\int_0^{\frac{\pi}{2}} f(cosx)dx</script><br>3.如果有<script type="math/tex">I=\int \phi(x)e^xdx,且\phi(x)=f'(x)+f(x)</script>,则<script type="math/tex">I=f(x)e^x</script><br>4.广义积分:<br><img src="https://thumbnail0.baidupcs.com/thumbnail/bc291e1d312d7982aff97141f6ec6bde?fid=1312760627-250528-654549961021874&amp;time=1564394400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8n1vzfQR%2BHqhulJV14P%2Bi20BenM%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=4864853510313617129&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="重要反常积分1"><br><img src="https://thumbnail0.baidupcs.com/thumbnail/bc291e1d312d7982aff97141f6ec6bde?fid=1312760627-250528-528383333949960&amp;time=1564394400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-nH10m8Ro2W%2BG%2FNAYXd1O1qa6TLE%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=4864868407641188482&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="重要反常积分2"></li>
 </ul>
+<h2 id="第六章：多元函数微分学"><a href="#第六章：多元函数微分学" class="headerlink" title="第六章：多元函数微分学"></a>第六章：多元函数微分学</h2><p>1.多元函数的各种关系<img src="https://thumbnail0.baidupcs.com/thumbnail/1f1ee410a38dc51e238c2892706e8c8c?fid=1312760627-250528-612883444174636&amp;time=1564394400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-XBwJ%2FHP23uB2mXPCx11e8hsSZuc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=4864770851703797938&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="多元函数关系图"><br>2.做多元函数求导题时，需要看清自变量与函数的区别！<br>3.证明函数可微:<script type="math/tex">\lim \limits_{x\to x_0,y\to y_0}\frac{f(x,y)-f(x_0,y_0)-f'_x(x_0,y_0)(x-x_0)-f'_y(x_0.y_0)(y-y_0)}{\sqrt{(x-x_0)^2+(y-y_0)^2}}</script>,<script type="math/tex">\lim \limits_{\Delta x\to 0,\Delta y\to 0}\frac{f(\Delta x+x_0,\Delta y+y_0)-f(x_0,y_0)-f'_x(x_0,y_0)\Delta x-f'_y(x_0.y_0)\Delta y}{\sqrt{\Delta x^2+\Delta y^2}}</script>必须存在<br>4.连续但不可偏导的函数<script type="math/tex">f(x,y)=\sqrt{x^2+y^2}</script>,<script type="math/tex">f(x,y)=\begin{cases}\frac{xy}{x^2+y^2}& \text{(x,y)\neq (0,0)}\\0& \text{(x,y)=(0,0)}\end{cases}</script><br>5.拉格朗日乘数法<a href="https://wenku.baidu.com/view/984f3da67e192279168884868762caaedd33ba85.html?from=search" target="_blank" rel="noopener">https://wenku.baidu.com/view/984f3da67e192279168884868762caaedd33ba85.html?from=search</a></p>
 <h2 id="第七章：重积分"><a href="#第七章：重积分" class="headerlink" title="第七章：重积分"></a>第七章：重积分</h2><h2 id="第八章：微分方程"><a href="#第八章：微分方程" class="headerlink" title="第八章：微分方程"></a>第八章：微分方程</h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/08/数学1800题总结/" data-id="cjy8nylp00000xsb1rdr9i933" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/08/数学1800题总结/" data-id="cjyoarn6e0001bgb1819x6464" class="article-share-link">Share</a>
       
       
     </footer>
