@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
@@ -14,14 +14,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="基础篇（高数）第一章：函数、极限、连续①.f(x)= e^{lnf(x)} 非最优先，先考虑③ ②.洛必达法则 ③.f(x)^y=[1+(f(x)-1)]^{\frac{1}{f(x)-1}*(f(x)-1)*y}\rightarrow e^{y*(f(x)-1)} 需保证f(x)\Rightarrow 1,此公式为两个重要极限之一，不能局部使用，会破坏极限的同时性 ④.\sqrt{f(x)}-\">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://thumbnail0.baidupcs.com/thumbnail/bc291e1d312d7982aff97141f6ec6bde?fid=1312760627-250528-654549961021874&time=1564394400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8n1vzfQR%2BHqhulJV14P%2Bi20BenM%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4864853510313617129&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video">
-<meta property="og:image" content="https://thumbnail0.baidupcs.com/thumbnail/bc291e1d312d7982aff97141f6ec6bde?fid=1312760627-250528-528383333949960&time=1564394400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-nH10m8Ro2W%2BG%2FNAYXd1O1qa6TLE%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4864868407641188482&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video">
-<meta property="og:image" content="https://thumbnail0.baidupcs.com/thumbnail/1f1ee410a38dc51e238c2892706e8c8c?fid=1312760627-250528-612883444174636&time=1564394400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-XBwJ%2FHP23uB2mXPCx11e8hsSZuc%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4864770851703797938&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video">
-<meta property="og:updated_time" content="2019-07-29T11:15:58.278Z">
+<meta property="og:image" content="https://wx4.sinaimg.cn/mw690/006z7mXNly1g61n93r5j6j30dw048gls.jpg">
+<meta property="og:image" content="https://wx3.sinaimg.cn/mw690/006z7mXNly1g61n93tio2j30c803wjre.jpg">
+<meta property="og:image" content="https://wx4.sinaimg.cn/mw690/006z7mXNly1g61n93rye1j308i08cmx7.jpg">
+<meta property="og:updated_time" content="2019-08-22T06:00:10.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数学1800题总结">
 <meta name="twitter:description" content="基础篇（高数）第一章：函数、极限、连续①.f(x)= e^{lnf(x)} 非最优先，先考虑③ ②.洛必达法则 ③.f(x)^y=[1+(f(x)-1)]^{\frac{1}{f(x)-1}*(f(x)-1)*y}\rightarrow e^{y*(f(x)-1)} 需保证f(x)\Rightarrow 1,此公式为两个重要极限之一，不能局部使用，会破坏极限的同时性 ④.\sqrt{f(x)}-\">
-<meta name="twitter:image" content="https://thumbnail0.baidupcs.com/thumbnail/bc291e1d312d7982aff97141f6ec6bde?fid=1312760627-250528-654549961021874&time=1564394400&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8n1vzfQR%2BHqhulJV14P%2Bi20BenM%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4864853510313617129&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video">
+<meta name="twitter:image" content="https://wx4.sinaimg.cn/mw690/006z7mXNly1g61n93r5j6j30dw048gls.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -143,22 +143,34 @@
 <li>若<script type="math/tex">\int R(x,\sqrt[n]{ax+b},\sqrt[m]{ax+b})dx型,a\neq 0,命\sqrt[mn]{ax+b}=t,x=\frac{t^{mn}-b}{a},dx=\frac{mn}{a}t^{mn-1}dt</script></li>
 <li>若<script type="math/tex">\int R(x,\sqrt{\frac{ax+b}{cx+d}})dx型,命\sqrt{\frac{ax+b}{cx+d}}=t,x=\frac{dt^2-b}{a-ct^2},dx=\frac{2(ad-bx)t}{(a-ct^2)^2}</script></li>
 <li>万能代换，若<script type="math/tex">\int R(sinx,cosx)dx型,tan\frac{x}{2}=t,则sinx=\frac{2t}{1+t^2},cosx=\frac{1-t^2}{1+t^2},dx=\frac{2}{1+t^2}dt</script></li>
-<li>形如<script type="math/tex">\sqrt{e^x-1}可以换元,x=ln(t^2+1),dx=\frac{2t}{t^2+1}</script><h2 id="第五章：定积分"><a href="#第五章：定积分" class="headerlink" title="第五章：定积分"></a>第五章：定积分</h2>1.设<script type="math/tex">f(x)\in C[-a,a],则\int_{-a}^af(x)dx=\int_0^a[f(x)+f(-x)]dx</script>(观察定积分上下限，如果对称马上考虑奇偶相消)<br>2.三角函数定积分性质：</li>
+<li>形如<script type="math/tex">\sqrt{e^x-1}可以换元,x=ln(t^2+1),dx=\frac{2t}{t^2+1}</script></li>
 </ul>
 </li>
 </ol>
+<h2 id="第五章：定积分"><a href="#第五章：定积分" class="headerlink" title="第五章：定积分"></a>第五章：定积分</h2><p>1.设<script type="math/tex">f(x)\in C[-a,a],则\int_{-a}^af(x)dx=\int_0^a[f(x)+f(-x)]dx</script>(观察定积分上下限，如果对称马上考虑奇偶相消)<br>2.三角函数定积分性质：</p>
 <ul>
 <li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^{\frac{\pi}{2}}f(sinx)dx=\int_0^{\frac{\pi}{2}}f(cosx)dx</script></li>
 <li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^\pi f(sinx)dx=2\int_0^{\frac{\pi}{2}}f(sinx)dx</script>,<script type="math/tex">\int_0^\pi f(|cosx|)dx=2\int_0^{\frac{\pi}{2}}f(cosx)dx</script></li>
 <li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^\pi xf(sinx)dx=\frac{\pi}{2}\int_0^\pi f(sinx)dx</script></li>
-<li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^{2\pi} f(|sinx|)dx=\int_0^{2\pi} f(|cosx|)dx=4\int_0^\{\frac{\pi}{2}} f(sinx)dx=4\int_0^{\frac{\pi}{2}} f(cosx)dx</script><br>3.如果有<script type="math/tex">I=\int \phi(x)e^xdx,且\phi(x)=f'(x)+f(x)</script>,则<script type="math/tex">I=f(x)e^x</script><br>4.广义积分:<br><img src="https://thumbnail0.baidupcs.com/thumbnail/bc291e1d312d7982aff97141f6ec6bde?fid=1312760627-250528-654549961021874&amp;time=1564394400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-8n1vzfQR%2BHqhulJV14P%2Bi20BenM%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=4864853510313617129&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="重要反常积分1"><br><img src="https://thumbnail0.baidupcs.com/thumbnail/bc291e1d312d7982aff97141f6ec6bde?fid=1312760627-250528-528383333949960&amp;time=1564394400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-nH10m8Ro2W%2BG%2FNAYXd1O1qa6TLE%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=4864868407641188482&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="重要反常积分2"></li>
+<li>设<script type="math/tex">f(x)\in C[0,1]</script>，则<script type="math/tex">\int_0^{2\pi} f(|sinx|)dx=\int_0^{2\pi} f(|cosx|)dx=4\int_0^{\frac{\pi}{2}} f(sinx)dx=4\int_0^{\frac{\pi}{2}} f(cosx)dx</script><br>3.如果有<script type="math/tex">I=\int \phi(x)e^xdx,且\phi(x)=f'(x)+f(x)</script>,则<script type="math/tex">I=f(x)e^x</script><br>4.广义积分:<br><img src="https://wx4.sinaimg.cn/mw690/006z7mXNly1g61n93r5j6j30dw048gls.jpg" alt="重要反常积分1"><br><img src="https://wx3.sinaimg.cn/mw690/006z7mXNly1g61n93tio2j30c803wjre.jpg" alt="重要反常积分2"></li>
 </ul>
-<h2 id="第六章：多元函数微分学"><a href="#第六章：多元函数微分学" class="headerlink" title="第六章：多元函数微分学"></a>第六章：多元函数微分学</h2><p>1.多元函数的各种关系<img src="https://thumbnail0.baidupcs.com/thumbnail/1f1ee410a38dc51e238c2892706e8c8c?fid=1312760627-250528-612883444174636&amp;time=1564394400&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-XBwJ%2FHP23uB2mXPCx11e8hsSZuc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=4864770851703797938&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="多元函数关系图"><br>2.做多元函数求导题时，需要看清自变量与函数的区别！<br>3.证明函数可微:<script type="math/tex">\lim \limits_{x\to x_0,y\to y_0}\frac{f(x,y)-f(x_0,y_0)-f'_x(x_0,y_0)(x-x_0)-f'_y(x_0.y_0)(y-y_0)}{\sqrt{(x-x_0)^2+(y-y_0)^2}}</script>,<script type="math/tex">\lim \limits_{\Delta x\to 0,\Delta y\to 0}\frac{f(\Delta x+x_0,\Delta y+y_0)-f(x_0,y_0)-f'_x(x_0,y_0)\Delta x-f'_y(x_0.y_0)\Delta y}{\sqrt{\Delta x^2+\Delta y^2}}</script>必须存在<br>4.连续但不可偏导的函数<script type="math/tex">f(x,y)=\sqrt{x^2+y^2}</script>,<script type="math/tex">f(x,y)=\begin{cases}\frac{xy}{x^2+y^2}& \text{(x,y)\neq (0,0)}\\0& \text{(x,y)=(0,0)}\end{cases}</script><br>5.拉格朗日乘数法<a href="https://wenku.baidu.com/view/984f3da67e192279168884868762caaedd33ba85.html?from=search" target="_blank" rel="noopener">https://wenku.baidu.com/view/984f3da67e192279168884868762caaedd33ba85.html?from=search</a></p>
-<h2 id="第七章：重积分"><a href="#第七章：重积分" class="headerlink" title="第七章：重积分"></a>第七章：重积分</h2><h2 id="第八章：微分方程"><a href="#第八章：微分方程" class="headerlink" title="第八章：微分方程"></a>第八章：微分方程</h2>
+<h2 id="第六章：多元函数微分学"><a href="#第六章：多元函数微分学" class="headerlink" title="第六章：多元函数微分学"></a>第六章：多元函数微分学</h2><p>1.多元函数的各种关系<img src="https://wx4.sinaimg.cn/mw690/006z7mXNly1g61n93rye1j308i08cmx7.jpg" alt="多元函数关系图"><br>2.做多元函数求导题时，需要看清自变量与因变量的区别！<br>3.证明函数可微:<script type="math/tex">\lim \limits_{x\to x_0,y\to y_0}\frac{f(x,y)-f(x_0,y_0)-f'_x(x_0,y_0)(x-x_0)-f'_y(x_0.y_0)(y-y_0)}{\sqrt{(x-x_0)^2+(y-y_0)^2}}</script>,<script type="math/tex">\lim \limits_{\Delta x\to 0,\Delta y\to 0}\frac{f(\Delta x+x_0,\Delta y+y_0)-f(x_0,y_0)-f'_x(x_0,y_0)\Delta x-f'_y(x_0.y_0)\Delta y}{\sqrt{\Delta x^2+\Delta y^2}}</script>必须存在<br>4.连续但不可偏导的函数<script type="math/tex">f(x,y)=\sqrt{x^2+y^2}</script>,<script type="math/tex">f(x,y)=\begin{cases}\frac{xy}{x^2+y^2}& \text{(x,y)\neq(0,0)}\\0& \text{(x,y)=(0,0)}\end{cases}</script><br>5.拉格朗日乘数法<a href="https://wenku.baidu.com/view/984f3da67e192279168884868762caaedd33ba85.html?from=search" target="_blank" rel="noopener">https://wenku.baidu.com/view/984f3da67e192279168884868762caaedd33ba85.html?from=search</a></p>
+<h2 id="第七章：重积分"><a href="#第七章：重积分" class="headerlink" title="第七章：重积分"></a>第七章：重积分</h2><p>1.观察对称积分区域有没有对称线,<script type="math/tex">y=x,y=-x,y=0,x=0</script></p>
+<h2 id="第八章：微分方程"><a href="#第八章：微分方程" class="headerlink" title="第八章：微分方程"></a>第八章：微分方程</h2><p>1.微分算子法<a href="https://wenku.baidu.com/view/a96428c0b9f67c1cfad6195f312b3169a451eae6.html" target="_blank" rel="noopener">https://wenku.baidu.com/view/a96428c0b9f67c1cfad6195f312b3169a451eae6.html</a><br>2.当积分结果出现<script type="math/tex">ln(y+\sqrt{1+y^2})</script>时,通过对式子取倒数,得到<script type="math/tex">\begin{cases}\sqrt{1+y^2}+y=f(x)& \\\sqrt{1+y^2}-y=\frac{1}{f(x)}& \end{cases}</script>,求出<script type="math/tex">y=\frac{1}{2}[f(x)-\frac{1}{f(x)}]</script><br>3.需要自定义换元时，要观察式子中隐藏的导数关系<br>4.解答物理题时，关键在于构建一个包含一元函数和函数微分的式子，自变量只能有一个!</p>
+<h1 id="基础篇（线代）"><a href="#基础篇（线代）" class="headerlink" title="基础篇（线代）"></a>基础篇（线代）</h1><h2 id="第一章：行列式"><a href="#第一章：行列式" class="headerlink" title="第一章：行列式"></a>第一章：行列式</h2><p>1.n阶行列式中任意一行的元素(<script type="math/tex">a_{k1},a_{k2},…,a_{kn}</script>)与另一行的相应元素的代数余子项(<script type="math/tex">\pm M_{kn}</script>)的乘积之和等于零<br>2.只有当两个行列式，只相差一行（或一列）元素不同时，才可以直接相加（相同的行（或列）不变，不相同的行（列），元素分别相加<br><strong><em><script type="math/tex">(a-b)(b-c)(c-a)=a^2c-a^b+ab^2-cb^2+bc^2-ac^2</script></em></strong><br><strong><em><script type="math/tex">a^3\pm b^3=(a±b)(a^2\mp ab+b^2</script></em></strong></p>
+<h1 id="第二、三章：矩阵、向量"><a href="#第二、三章：矩阵、向量" class="headerlink" title="第二、三章：矩阵、向量"></a>第二、三章：矩阵、向量</h1><p>1.矩阵的秩:<script type="math/tex">r(A)\leq min(m,n),r(A)=r(A^T),r(A+B)\leq r(A)+r(B)</script>,<script type="math/tex">r(A)+r(B)-B的行数\leq r(AB)\leq min(r(A),r(B))</script><br>2.向量组等价:$\color{red}{两个向量组可以互相线性表示}$，或者R（A）=R（B）=R（A，B）<br>3.矩阵等价:$\color{red}{存在可逆矩阵，A经过有限次的初等变换得到B}$,B=QAP<br><strong><em>2比3更严格 </em></strong></p>
+<h1 id="第四章：线性方程组"><a href="#第四章：线性方程组" class="headerlink" title="第四章：线性方程组"></a>第四章：线性方程组</h1><p>1.若方程组AX=0只有零解，$\color{red}{且r(A)=r(A|b）}$，则方程组AX=b有唯一解<br>2.若r(A)=m(A为m*n阶矩阵),则$\color{red}{ r(A)=r(A|b）}$，则方程组AX=b一定有解</p>
+<h1 id="第五章：矩阵的特征值和特征向量"><a href="#第五章：矩阵的特征值和特征向量" class="headerlink" title="第五章：矩阵的特征值和特征向量"></a>第五章：矩阵的特征值和特征向量</h1><p>1.实对称矩阵：</p>
+<ul>
+<li>实对称矩阵A的不同特征值对应的特征向量是正交的。</li>
+<li>n阶实对称矩阵A必可对角化，且相似对角阵上的元素即为矩阵本身特征值。</li>
+<li>若λ0具有k重特征值　必有k个线性无关的特征向量，或者说必有秩r(λE-A)=n-k，其中E为单位矩阵。<br>2.$\color{red}{正定矩阵A与单位矩阵E合同}$<br>3.$\color{red}{正定矩阵的各阶顺序主子式都为正}$<br>4.n阶矩阵A与对角矩阵相似，则A存在n个线性无关的特征向量<br>5.任意列向量<script type="math/tex">\alpha,\beta,r(\alpha \beta ^T)\leq r(\alpha)=1,\alpha \beta ^T</script>的特征值为点积和多个0<br><strong><em>当出现矩阵每一行的元素之和为xxx时，考虑向量<script type="math/tex">（1,1,1）^T</script></em></strong><br>6.若A可逆,则AB∽BA,因为<script type="math/tex">ABAA^{-1}=BA</script><br><strong><em>r(A-B)≤r(A)+r(B)</em></strong><br>7.$\color{red}{矩阵和矩阵的逆有相同的特征向量}$</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/07/08/数学1800题总结/" data-id="cjyoarn6e0001bgb1819x6464" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/07/08/数学1800题总结/" data-id="cjzma6xcq0001kwb11yeib3ms" class="article-share-link">Share</a>
       
       
     </footer>
@@ -267,6 +279,6 @@
             all[i].SourceElement().parentNode.className += ' has-jax';
     });
 </script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
